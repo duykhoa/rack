@@ -1,6 +1,5 @@
 require 'optparse'
 
-
 module Rack
 
   class Server
@@ -254,7 +253,7 @@ module Rack
       self.class.middleware
     end
 
-    def start &blk
+    def start(&blk)
       if options[:warn]
         $-w = true
       end
